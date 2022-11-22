@@ -10,9 +10,21 @@ public class ExamExercise5
         int x = 7;
         int y = 9;
 
-        a  = b;
+        x = y;
+        //a = b;
 
-        a == b   //Hvad er det?
+        double result = sum(a);
+        System.out.println("middelvaerdi er: " + result);
+    }
 
+    public static double sum(int[] arr)
+    {
+        double dims = 0;
+        for(int i=0; i< arr.length; i++)
+        {
+            dims = dims + arr[i];
+        }
+        dims = dims / arr.length;
+        return dims;
     }
 }
