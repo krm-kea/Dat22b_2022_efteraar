@@ -12,7 +12,7 @@ public class ExamExercise4
 
         for(int i=1; i <=stop; i++)
         {
-            for (int b=0; b<5-i; b++)
+            for (int b=0; b<stop-i; b++)
             {
                 System.out.print(" ");
             }
